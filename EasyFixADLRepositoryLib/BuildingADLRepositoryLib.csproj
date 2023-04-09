@@ -1,0 +1,75 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Services\Company\**" />
+    <Compile Remove="Services\Customer\**" />
+    <Compile Remove="Services\GroupService\**" />
+    <Compile Remove="Services\MedClinicService\**" />
+    <Compile Remove="Services\MedDoctor\**" />
+    <Compile Remove="Services\MedHospital\**" />
+    <Compile Remove="Services\ServiceItem\**" />
+    <Compile Remove="Services\Technician\**" />
+    <Compile Remove="Services\ViewModels\**" />
+    <EmbeddedResource Remove="Services\Company\**" />
+    <EmbeddedResource Remove="Services\Customer\**" />
+    <EmbeddedResource Remove="Services\GroupService\**" />
+    <EmbeddedResource Remove="Services\MedClinicService\**" />
+    <EmbeddedResource Remove="Services\MedDoctor\**" />
+    <EmbeddedResource Remove="Services\MedHospital\**" />
+    <EmbeddedResource Remove="Services\ServiceItem\**" />
+    <EmbeddedResource Remove="Services\Technician\**" />
+    <EmbeddedResource Remove="Services\ViewModels\**" />
+    <None Remove="Services\Company\**" />
+    <None Remove="Services\Customer\**" />
+    <None Remove="Services\GroupService\**" />
+    <None Remove="Services\MedClinicService\**" />
+    <None Remove="Services\MedDoctor\**" />
+    <None Remove="Services\MedHospital\**" />
+    <None Remove="Services\ServiceItem\**" />
+    <None Remove="Services\Technician\**" />
+    <None Remove="Services\ViewModels\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="Models\Company.cs" />
+    <Compile Remove="Models\EasyFixContext.cs" />
+    <Compile Remove="Models\GroupService.cs" />
+    <Compile Remove="Models\MedClinic.cs" />
+    <Compile Remove="Models\MedDoctor.cs" />
+    <Compile Remove="Models\MedDoctorTime.cs" />
+    <Compile Remove="Models\MedHospital.cs" />
+    <Compile Remove="Models\MedOrder.cs" />
+    <Compile Remove="Models\MedOrderDet.cs" />
+    <Compile Remove="Models\Offer.cs" />
+    <Compile Remove="Models\OfferDet.cs" />
+    <Compile Remove="Models\Order.cs" />
+    <Compile Remove="Models\OrderDet.cs" />
+    <Compile Remove="Models\Service.cs" />
+    <Compile Remove="Models\Technician.cs" />
+    <Compile Remove="Repositories\BaseRepository.cs" />
+    <Compile Remove="Repositories\BooksRepository.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Microsoft.AspNet.WebApi.Core" Version="5.2.9" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.2" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Repositories\" />
+  </ItemGroup>
+
+</Project>
